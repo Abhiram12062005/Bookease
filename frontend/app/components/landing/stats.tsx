@@ -76,7 +76,7 @@ export function Stats() {
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#7C3AED]/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#10B981]/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#9B5CF6]/30 to-transparent" />
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">

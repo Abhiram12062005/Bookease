@@ -56,11 +56,11 @@ export function Features() {
   ]
 
   return (
-    <section id="features" className="py-24 px-6 bg-[#0A0A0F] relative overflow-hidden">
+    <section id="features" className="py-24 px-6 bg-[#9B5CF620] relative overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Column - Sticky Prose */}
-          <div className="lg:sticky lg:top-32 h-fit">
+          <div className="lg:sticky  h-fit">
             <div className="fade-up">
               <h2 className="font-jakarta text-white mb-4" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>
                 Everything You Need
@@ -95,9 +95,9 @@ export function Features() {
                   onClick={() => setActiveIndex(isOpen ? null : idx)}
                 >
                   {/* Header */}
-                  <div className="p-6 flex items-start justify-between hover:bg-white/2 transition-colors">
-                    <div className="flex items-start gap-4 flex-1">
-                      <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                  <div className="p-6 flex items-center justify-between hover:bg-white/2 transition-colors">
+                    <div className="flex items-center gap-4 flex-1">
+                      <div className={`w-15 h-15 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
                         isOpen
                           ? 'bg-gradient-to-br from-[#7C3AED] to-[#9B5CF6]'
                           : 'bg-white/5 border border-white/10'

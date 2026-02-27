@@ -104,7 +104,7 @@ export function FAQ() {
         </div>
 
         {/* Support Card */}
-        <div className="card-base p-8 border-l-2 border-l-[#7C3AED]">
+        <div className="card-base p-8 border-l-2 border-l-[#7C3AED] bg-[#9B5CF620]">
           <h3 className="text-white font-jakarta text-xl font-bold mb-2">
             Still have questions?
           </h3>

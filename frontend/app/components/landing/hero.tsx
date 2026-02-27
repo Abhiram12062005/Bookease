@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from 'react'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -44,12 +45,20 @@ export function Hero() {
           <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto font-dm leading-relaxed">
             Select a template, fill in your details, and get a hosted booking site instantly. No coding. No hassle. Just bookings.
           </p>
-          <div className="flex gap-4 mt-8 justify-center flex-wrap">
-            <button className="btn-accent flex items-center gap-2">
-              Get Started Free
-              <ArrowRight size={18} />
-            </button>
-            <button className="btn-ghost">See How It Works</button>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center items-center">
+            <Link
+              href="/"
+              className="bg-[#9B5CF6] text-sm w-full sm:w-auto sm:min-w-[180px] rounded-full text-white py-3 px-6 text-center hover:bg-[#8B4CF5] transition-colors"
+            >
+              Get Started
+            </Link>
+
+            <Link
+              href="/"
+              className="text-sm w-full sm:w-auto sm:min-w-[180px] py-3 px-6 rounded-full text-white border border-[#9B5CF6] text-center hover:bg-[#8B4CF5] transition-colors"
+            >
+              See How it Works
+            </Link>
           </div>
         </div>
 

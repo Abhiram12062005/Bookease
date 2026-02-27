@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import SplashCursor from './components/ui/CustomCursor'
+import { ReduxProvider } from './api/ReduxProvider'
 
 const plusJakarta = Plus_Jakarta_Sans({ 
   subsets: ['latin'],
@@ -57,8 +59,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakarta.variable}`}>
       <body className="antialiased bg-[#0A0A0F]" style={{ fontFamily: 'var(--font-dm-sans), system-ui, sans-serif' }}>
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
         <Analytics />
+        <SplashCursor />
       </body>
     </html>
   )
