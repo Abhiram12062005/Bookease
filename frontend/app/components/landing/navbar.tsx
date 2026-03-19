@@ -61,7 +61,7 @@ export function Navbar() {
       const data = await res.json()
 
       if (data.ok && data.subscribed) {
-        router.push('/dashboard')
+        router.push('/projects')
       } else {
         setShowSubscriptionPopup(true)
       }
